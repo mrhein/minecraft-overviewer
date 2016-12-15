@@ -27,7 +27,8 @@ COPY entrypoint.sh /home/minecraft/entrypoint.sh
 RUN chown minecraft:minecraft -R /home/minecraft/
 
 WORKDIR /home/minecraft/
-VOLUME /home/minecraft/
+VOLUME /home/minecraft/server/
+VOLUME /home/minecraft/render/
 
 USER minecraft
 
